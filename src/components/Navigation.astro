@@ -6,8 +6,7 @@ import { DarkMode } from 'accessible-astro-components'
 <div id="main-navigation" class="is-desktop py-8">
   <div class="container">
     <a href="/" class="flex items-center gap-2 !no-underline">
-      <img src={(await import('../assets/img/logo.svg')).default} alt="Your Logo" width="47" height="37" />
-      <span class="font-bold">Accessible Astro</span>
+      <img src={(await import('../assets/img/logo.svg')).default} alt="Grassroots Druids Heath Logo" width="400" height="40" />
     </a>
     <div class="wrapper">
       <nav class="desktop-menu" aria-label="Main navigation desktop">
@@ -209,6 +208,7 @@ import { DarkMode } from 'accessible-astro-components'
   @use '../assets/scss/base/outline' as *;
 
   #main-navigation {
+    
     > .container {
       display: flex;
       justify-content: space-between;

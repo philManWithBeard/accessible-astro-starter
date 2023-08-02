@@ -6,6 +6,7 @@ import { Icon } from 'astro-icon'
 
 <header>
   <SkipLinks />
+  <div class ="announcemen-bar"></div>
   <Navigation>
     <li class="menu-item">
       <a href="/">Home</a>
@@ -14,26 +15,18 @@ import { Icon } from 'astro-icon'
       <a href="/blog/">Blog</a>
     </li>
     <li class="menu-item has-dropdown">
-      <button aria-haspopup="true" aria-expanded="false">Example Pages</button>
+      <button aria-haspopup="true" aria-expanded="false">Projects</button>
       <ul class="dropdown-menu">
         <li class="submenu-item">
-          <a href="/mdx-page/">MDX Page</a>
+          <a href="/mdx-page/">Street Champions</a>
         </li>
         <li class="submenu-item">
-          <a href="/markdown-page/">Markdown Page</a>
+          <a href="/markdown-page/">The Weekly Litter Pick</a>
         </li>
         <li class="submenu-item">
-          <a href="/accessible-components">Accessible Components</a>
+          <a href="/accessible-components">Growing Safety</a>
         </li>
       </ul>
-    </li>
-    <li class="menu-item">
-      <a href="https://accessible-astro.dev" title="external link" rel="external noopener noreferrer">External Link</a>
-    </li>
-    <li class="menu-item type-icon">
-      <a href="https://github.com/markteekman/accessible-astro-starter" title="Go to the GitHub page">
-        <Icon pack="ion" name="logo-github" />
-      </a>
     </li>
   </Navigation>
 </header>
@@ -41,19 +34,26 @@ import { Icon } from 'astro-icon'
 <style lang="scss" is:global>
   @use '../assets/scss/base/outline' as *;
 
+  div.announcemen-bar{
+    background-color: #0eb2ce;
+    height: 25px;
+  }
+
   header {
     .type-icon a {
       display: block;
 
       [astro-icon] {
         margin-top: -4px;
-        width: 30px;
+        width: 40px;
 
         path {
           fill: var(--action-color);
           transition: fill 0.2s ease-in-out;
         }
       }
+
+
 
       &:hover {
         [astro-icon] path {

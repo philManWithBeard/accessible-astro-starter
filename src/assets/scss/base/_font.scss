@@ -5,9 +5,27 @@
 @use 'breakpoint' as *;
 
 @font-face {
+  font-family: 'naivelinesansregular';
+  src: local('naivelinesansregular'), local('naivelinesansregular'), url('/fonts/naivelinesansregular-webfont.woff2') format('woff2'),
+    url('/fonts/naivelinesansregular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'naivelinesansextrablack';
+  src: local('naivelinesansextrablack'), local('naivelinesansextrablack'), url('/fonts/naivelinesansextrablack-webfont.woff2') format('woff2'),
+    url('/fonts/naivelinesansextrablack-webfont.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Open Sans';
   src: local('Open Sans ExtraBold'), local('OpenSans-ExtraBold'), url('/fonts/OpenSans-ExtraBold.woff2') format('woff2'),
-    url('/fonts/OpenSans-ExtraBold.woff') format('woff');
+    url('/fonts/naivelinesansextrablack-webfont.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
