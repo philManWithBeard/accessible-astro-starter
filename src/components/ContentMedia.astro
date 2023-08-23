@@ -11,7 +11,7 @@ const { imgSrc, reverseImg = false, altText = "flag this" } = Astro.props
       <div class="space-content flex flex-col justify-center">
         <slot />
       </div>
-      {reverseImg ? <Media class="rounded-lg" src={imgSrc} alt={altText}/> : ''}
+      {reverseImg ? <Media class="hidden lg:block" src={imgSrc} alt={altText}/> : ''}
     </div>
   </div>
 </section>
