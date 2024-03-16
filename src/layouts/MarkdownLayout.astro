@@ -1,5 +1,6 @@
 ---
 import DefaultLayout from './DefaultLayout.astro'
+import CallToAction from '../components/CallToAction.astro'
 
 const { frontmatter } = Astro.props
 ---
@@ -10,4 +11,5 @@ const { frontmatter } = Astro.props
       <slot />
     </div>
   </div>
+  <CallToAction />
 </DefaultLayout>
