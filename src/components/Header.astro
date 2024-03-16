@@ -1,12 +1,12 @@
 ---
 import Navigation from '../components/Navigation.astro'
 import { SkipLinks } from 'accessible-astro-components'
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 ---
 
 <header>
   <SkipLinks />
-  <div class ="announcement-bar"></div>
+  <div class="announcement-bar"></div>
   <Navigation>
     <li class="menu-item">
       <a href="/">Home</a>
@@ -34,7 +34,7 @@ import { Icon } from 'astro-icon'
 <style lang="scss" is:global>
   @use '../assets/scss/base/outline' as *;
 
-  div.announcement-bar{
+  div.announcement-bar {
     background-color: #0eb2ce;
     height: 25px;
   }
@@ -43,20 +43,18 @@ import { Icon } from 'astro-icon'
     .type-icon a {
       display: block;
 
-      [astro-icon] {
+      [data-icon] {
+        height: auto;
         margin-top: -4px;
         width: 40px;
 
         path {
           fill: var(--action-color);
-          transition: fill 0.2s ease-in-out;
         }
       }
 
-
-
       &:hover {
-        [astro-icon] path {
+        [data-icon] path {
           fill: var(--action-color-state);
         }
       }

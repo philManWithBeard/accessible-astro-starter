@@ -1,5 +1,5 @@
 ---
-import { Icon } from 'astro-icon'
+import { Icon } from 'astro-icon/components'
 
 const { src = '/astronaut-hero-img.webp' } = Astro.props
 ---
@@ -13,12 +13,17 @@ const { src = '/astronaut-hero-img.webp' } = Astro.props
         </h1>
         <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="/get-involved">
-            <Icon pack="ion" name="star-outline" />
+            <Icon name="ion:star-outline" />
             Make your area better
           </a>
         </div>
       </div>
-      <img class="hidden lg:block" src={src} alt="9 volunteers standing under a tree with many bags of rubbish that they worked hard to collect" decoding="async" />
+      <img
+        class="hidden lg:block"
+        src={src}
+        alt="9 volunteers standing under a tree with many bags of rubbish that they worked hard to collect"
+        decoding="async"
+      />
     </div>
   </div>
 </section>
