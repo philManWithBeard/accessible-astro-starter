@@ -13,6 +13,14 @@ const {
   image = '/GRDH-Meta.png',
   author = 'Phil Burrows',
 } = Astro.props
+
+const fontSources = [
+  {
+    style: 'normal',
+    weight: '400',
+    path: './public/fonts/OpenSans-Regular.woff2',
+  },
+]
 ---
 
 <html lang="en" dir="ltr">
@@ -36,6 +44,14 @@ const {
 
     <AstroFont
       config={[
+        {
+          name: 'Open Sans',
+          src: fontSources,
+          preload: false,
+          display: 'swap',
+          fallback: 'sans-serif',
+          cssVariable: 'font-family-default',
+        },
         {
           name: 'naivelinesansextrablack',
           src: [
