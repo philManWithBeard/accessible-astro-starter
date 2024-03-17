@@ -13,6 +13,30 @@ const {
   image = '/GRDH-Meta.png',
   author = 'Phil Burrows',
 } = Astro.props
+
+const fontSources = [
+  {
+    style: 'bold',
+    weight: '900',
+    path: './public/fonts/OpenSans-ExtraBold.woff2',
+  },
+  {
+    preload: true,
+    style: 'bold',
+    weight: '800',
+    path: './public/fonts/OpenSans-Bold.woff2',
+  },
+  {
+    style: 'italic',
+    weight: '400',
+    path: './public/fonts/OpenSans-Italic.woff2',
+  },
+  {
+    style: 'normal',
+    weight: '400',
+    path: './public/fonts/OpenSans-Regular.woff2',
+  },
+]
 ---
 
 <html lang="en" dir="ltr">
@@ -37,18 +61,26 @@ const {
     <AstroFont
       config={[
         {
+          name: 'Open Sans',
+          src: fontSources,
+          preload: false,
+          display: 'swap',
+          fallback: 'sans-serif',
+          cssVariable: 'font-family-default',
+        },
+        {
           name: 'naivelinesansextrablack',
           src: [
             {
               style: 'bold',
-              weight: '1000',
+              weight: '900',
               path: './public/fonts/naivelinesansextrablack-webfont.woff2',
             },
           ],
           preload: false,
           display: 'swap',
-          selector: 'body',
           fallback: 'sans-serif',
+          cssVariable: 'font-family-special',
         },
       ]}
     />
