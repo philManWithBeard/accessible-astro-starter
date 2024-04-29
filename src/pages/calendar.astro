@@ -9,8 +9,15 @@ import DefaultLayout from '../layouts/DefaultLayout.astro'
       <p class="text-2xl">Community Events in Druids Heath</p>
     </div>
   </section>
-  <section class="space-content container p-5">
-    <script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
-    <div class="smgc-calendar-placeholder" id="smgc-cal-cr0XRhJsbN19Y985c2IF"></div>
+  <section class="space-content container">
+    <div class="pb-12">
+      <iframe
+        src="https://embed.styledcalendar.com/#u7chYatMNwL7JUA9bFAS"
+        title="Druids Heath Calendar"
+        class="styled-calendar-container"
+        style="width: 100%; border: none;"
+        data-cy="calendar-embed-iframe"></iframe>
+      <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+    </div>
   </section>
 </DefaultLayout>
