@@ -1,131 +1,272 @@
 ---
 import DefaultLayout from '../layouts/DefaultLayout.astro'
-import { Icon } from 'astro-icon'
-import {
-  Accordion,
-  AccordionItem,
-  Breadcrumbs,
-  BreadcrumbsItem,
-  Card,
-  Media,
-  Modal,
-  Notification,
-  Pagination,
-} from 'accessible-astro-components'
 ---
 
 <DefaultLayout title="Get Involved">
   <section class="mt-12">
     <div class="space-content container">
-      <h1>Get Involved</h1>
-      <p class="text-2xl">
-        Help make Druids Heath a better place
-      </p>
+      <h1 class="text-4xl md:text-left lg:text-6xl">Get Involved</h1>
+      <p class="text-2xl"> Help make Druids Heath a better place</p>
     </div>
   </section>
   <section>
     <div class="container">
       <div class="grid grid-cols-1 gap-32 md:grid-cols-2">
         <div class="space-content">
-          <style>.engage-bay-source-form.engagebay-forms[data-id="6111706528350208"] *{font-family:Arial, Helvetica, sans-serif}</style><style>body{color:#333;}</style><div class="engage-bay-source-form engagebay-forms" data-id="6111706528350208"><form class="form form-style-form1 default   " onsubmit="window.EhForm.submit_form(event,this)" style="
+          <style>
+            .engage-bay-source-form.engagebay-forms[data-id='6111706528350208'] * {
+              font-family: Arial, Helvetica, sans-serif;
+            }
+          </style><div class="engage-bay-source-form engagebay-forms" data-id="6111706528350208"
+            ><form
+              class="form form-style-form1 default"
+              onsubmit="window.EhForm.submit_form(event,this)"
+              style="
             background-color:transparent;max-width:700px;background-position:0% 0%
-              ;box-shadow: none;true" data-id="6111706528350208"> 
-             <fieldset> 
-              <!-- Form Name --> 
-              <div class="form-group recquired-field"> 
-               <label class="control-label" for="eb_temp_field_checkbox"><p class="text-2xl pt-10 pb-5">I want to help by<span class="text-danger">*</span></p></label> 
-               <div class="controls" style="text-align:left;color:inherit"> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox" data-ebay_add_as="ADDASTAG" type="checkbox" name="eb_temp_field_checkbox_0" id="eb_temp_field_checkbox-0" value="Sharing my ideas for Druids Heath"> 
-                 <label for="eb_temp_field_checkbox-0">Sharing my ideas for Druids Heath</label> 
-                </div> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox" data-ebay_add_as="ADDASTAG" type="checkbox" name="eb_temp_field_checkbox_1" id="eb_temp_field_checkbox-1" value="Gardening / litter picking / painting"> 
-                 <label for="eb_temp_field_checkbox-1">Gardening / litter picking / painting</label> 
-                </div> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox" data-ebay_add_as="ADDASTAG" type="checkbox" name="eb_temp_field_checkbox_2" id="eb_temp_field_checkbox-2" value="Helping out with marketing / admin / service design"> 
-                 <label for="eb_temp_field_checkbox-2">Helping out with marketing / admin / service design</label> 
-                </div> 
-               </div> 
-              </div> 
-              <div class="form-group recquired-field"> 
-               <label class="control-label" for="eb_temp_field_checkbox_1"><p class="text-2xl pt-10 pb-5">I am<span class="text-danger">*</span></p> </label> 
-               <div class="controls" style="text-align:left;color:inherit"> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox_1" data-ebay_add_as="-- Select --" type="checkbox" name="eb_temp_field_checkbox_1_0" id="eb_temp_field_checkbox_1-0" value="A Person from Druids Heath"> 
-                 <label for="eb_temp_field_checkbox_1-0">A Person from Druids Heath</label> 
-                </div> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox_1" data-ebay_add_as="-- Select --" type="checkbox" name="eb_temp_field_checkbox_1_1" id="eb_temp_field_checkbox_1-1" value="An Organisation from Druids Heath"> 
-                 <label for="eb_temp_field_checkbox_1-1">An Organisation from Druids Heath</label> 
-                </div> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox_1" data-ebay_add_as="-- Select --" type="checkbox" name="eb_temp_field_checkbox_1_2" id="eb_temp_field_checkbox_1-2" value="A Person from Outside of Druids Heath"> 
-                 <label for="eb_temp_field_checkbox_1-2">A Person from Outside of Druids Heath</label> 
-                </div> 
-                <div class="be-checkbox "> 
-                 <input data-ebay_field="eb_temp_field_checkbox_1" data-ebay_add_as="-- Select --" type="checkbox" name="eb_temp_field_checkbox_1_3" id="eb_temp_field_checkbox_1-3" value="An Organisation from Outside of Druids Heath"> 
-                 <label for="eb_temp_field_checkbox_1-3">An Organisation from Outside of Druids Heath</label> 
-                </div> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="name"><p class="text-2xl pt-10 pb-5">First Name<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="name" data-ebay_add_as="" id="name" title="" name="name" type="text" placeholder="Enter your first name" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="last_name"><p class="text-2xl pt-10 pb-5">Last Name<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="last_name" data-ebay_add_as="" id="last_name" title="" name="last_name" type="text" placeholder="Enter your last name" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="company"><p class="text-2xl pt-10 pb-5">Organisation</p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="company" data-ebay_add_as="" id="company" title="" name="company" type="text" placeholder="If applicable, enter your organisation name" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="email"><p class="text-2xl pt-10 pb-5">Email<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="email" data-ebay_add_as="" id="email" title="" name="email" type="email" placeholder="Enter your email" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="phone_number"><p class="text-2xl pt-10 pb-5">Phone Number<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="phone" data-ebay_add_as="" id="phone_number" title="Please enter valid phone number." name="phone_number" type="phone" placeholder="Enter your Phone Number" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="address_line"><p class="text-2xl pt-10 pb-5">Address Line<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="address.address_line_1" data-ebay_add_as="" id="address_line" title="" name="address_line" type="text" placeholder="Address" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group"> 
-               <label class="control-label" for="postal_code"><p class="text-2xl pt-10 pb-5">Postal Code<span class="text-danger">*</span></p> </label> 
-               <div class="controls"> 
-                <input data-ebay_field="address.zip" data-ebay_add_as="" id="postal_code" title="Allows only alphanumeric and hyphen." pattern="[a-zA-Z0-9 -]+" name="postal_code" type="text" placeholder="Enter your postal code" class="form-control bg-gray-50 border border-black-300 text-black-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="true"> 
-               </div> 
-              </div> 
-              <div class="form-group pt-10 pb-5"> 
-               <div> 
-                <button data-ebay_field="address.zip" data-ebay_add_as="-- Select --" type="submit" class="button bg--primary-100:">
-                  <p>Submit</p></button> 
-                <br> 
-                <span id="error-msg"></span> 
-               </div> 
-              </div> 
-             </fieldset> 
-             <div class="error-success-container"></div> 
-             <div class="form-footer-message"> 
-              <p style="text-align: left;" data-mce-style="text-align: left;"><span style="font-size: 20px;" data-mce-style="font-size: 20px;">You'll receive an email and an invitation to a quick 10 minute introduction</span></p> 
-             </div> 
-            </form> 
+              ;box-shadow: none;true"
+              data-id="6111706528350208"
+            >
+              <fieldset>
+                <!-- Form Name -->
+                <div class="form-group recquired-field">
+                  <label class="control-label" for="eb_temp_field_checkbox"
+                    ><p class="pb-5 pt-10 text-2xl">I want to help by<span class="text-danger">*</span></p></label
+                  >
+                  <div class="controls" style="text-align:left;color:inherit">
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox"
+                        data-ebay_add_as="ADDASTAG"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_0"
+                        id="eb_temp_field_checkbox-0"
+                        value="Sharing my ideas for Druids Heath"
+                      />
+                      <label for="eb_temp_field_checkbox-0">Sharing my ideas for Druids Heath</label>
+                    </div>
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox"
+                        data-ebay_add_as="ADDASTAG"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_1"
+                        id="eb_temp_field_checkbox-1"
+                        value="Gardening / litter picking / painting"
+                      />
+                      <label for="eb_temp_field_checkbox-1">Gardening / litter picking / painting</label>
+                    </div>
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox"
+                        data-ebay_add_as="ADDASTAG"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_2"
+                        id="eb_temp_field_checkbox-2"
+                        value="Helping out with marketing / admin / service design"
+                      />
+                      <label for="eb_temp_field_checkbox-2">Helping out with marketing / admin / service design</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group recquired-field">
+                  <label class="control-label" for="eb_temp_field_checkbox_1"
+                    ><p class="pb-5 pt-10 text-2xl">I am<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls" style="text-align:left;color:inherit">
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox_1"
+                        data-ebay_add_as="-- Select --"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_1_0"
+                        id="eb_temp_field_checkbox_1-0"
+                        value="A Person from Druids Heath"
+                      />
+                      <label for="eb_temp_field_checkbox_1-0">A Person from Druids Heath</label>
+                    </div>
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox_1"
+                        data-ebay_add_as="-- Select --"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_1_1"
+                        id="eb_temp_field_checkbox_1-1"
+                        value="An Organisation from Druids Heath"
+                      />
+                      <label for="eb_temp_field_checkbox_1-1">An Organisation from Druids Heath</label>
+                    </div>
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox_1"
+                        data-ebay_add_as="-- Select --"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_1_2"
+                        id="eb_temp_field_checkbox_1-2"
+                        value="A Person from Outside of Druids Heath"
+                      />
+                      <label for="eb_temp_field_checkbox_1-2">A Person from Outside of Druids Heath</label>
+                    </div>
+                    <div class="be-checkbox">
+                      <input
+                        data-ebay_field="eb_temp_field_checkbox_1"
+                        data-ebay_add_as="-- Select --"
+                        type="checkbox"
+                        name="eb_temp_field_checkbox_1_3"
+                        id="eb_temp_field_checkbox_1-3"
+                        value="An Organisation from Outside of Druids Heath"
+                      />
+                      <label for="eb_temp_field_checkbox_1-3">An Organisation from Outside of Druids Heath</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="name"
+                    ><p class="pb-5 pt-10 text-2xl">First Name<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="name"
+                      data-ebay_add_as=""
+                      id="name"
+                      title=""
+                      name="name"
+                      type="text"
+                      placeholder="Enter your first name"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="last_name"
+                    ><p class="pb-5 pt-10 text-2xl">Last Name<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="last_name"
+                      data-ebay_add_as=""
+                      id="last_name"
+                      title=""
+                      name="last_name"
+                      type="text"
+                      placeholder="Enter your last name"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="company"><p class="pb-5 pt-10 text-2xl">Organisation</p></label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="company"
+                      data-ebay_add_as=""
+                      id="company"
+                      title=""
+                      name="company"
+                      type="text"
+                      placeholder="If applicable, enter your organisation name"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="email"
+                    ><p class="pb-5 pt-10 text-2xl">Email<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="email"
+                      data-ebay_add_as=""
+                      id="email"
+                      title=""
+                      name="email"
+                      type="email"
+                      placeholder="Enter your email"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="phone_number"
+                    ><p class="pb-5 pt-10 text-2xl">Phone Number<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="phone"
+                      data-ebay_add_as=""
+                      id="phone_number"
+                      title="Please enter valid phone number."
+                      name="phone_number"
+                      type="phone"
+                      placeholder="Enter your Phone Number"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="address_line"
+                    ><p class="pb-5 pt-10 text-2xl">Address Line<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="address.address_line_1"
+                      data-ebay_add_as=""
+                      id="address_line"
+                      title=""
+                      name="address_line"
+                      type="text"
+                      placeholder="Address"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label" for="postal_code"
+                    ><p class="pb-5 pt-10 text-2xl">Postal Code<span class="text-danger">*</span></p>
+                  </label>
+                  <div class="controls">
+                    <input
+                      data-ebay_field="address.zip"
+                      data-ebay_add_as=""
+                      id="postal_code"
+                      title="Allows only alphanumeric and hyphen."
+                      pattern="[a-zA-Z0-9 -]+"
+                      name="postal_code"
+                      type="text"
+                      placeholder="Enter your postal code"
+                      class="form-control border-black-300 text-black-900 block w-full border bg-gray-50 p-2.5 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
+                      required="true"
+                    />
+                  </div>
+                </div>
+                <div class="form-group pb-5 pt-10">
+                  <div>
+                    <button
+                      data-ebay_field="address.zip"
+                      data-ebay_add_as="-- Select --"
+                      type="submit"
+                      class="button bg--primary-100:"
+                    >
+                      <p>Submit</p></button
+                    >
+                    <br />
+                    <span id="error-msg"></span>
+                  </div>
+                </div>
+              </fieldset>
+              <div class="error-success-container"></div>
+              <div class="form-footer-message">
+                <p style="text-align: left;" data-mce-style="text-align: left;"
+                  ><span style="font-size: 20px;" data-mce-style="font-size: 20px;"
+                    >You'll receive an email and an invitation to a quick 10 minute introduction</span
+                  ></p
+                >
+              </div>
+            </form>
           </div>
         </div>
       </div>
